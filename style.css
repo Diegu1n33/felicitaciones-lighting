@@ -81,33 +81,37 @@ color:#d0d0d0;
 
 .new-card-form{
 
-display:flex;
+  max-width:900px;
 
-flex-direction:column;
+  margin:0 auto 40px;
 
-gap:15px;
+  display:flex;
 
-margin-bottom:25px;
+  flex-direction:column;
+
+  gap:20px;
 }
 
 input,
 textarea{
 
-background:
-rgba(255,255,255,.05);
+  background:
+    rgba(255,255,255,.06);
 
-border:
-1px solid rgba(255,255,255,.08);
+  border:
+    1px solid rgba(255,255,255,.1);
 
-border-radius:18px;
+  border-radius:20px;
 
-padding:15px;
+  padding:20px;
 
-font-size:16px;
+  font-size:18px;
 
-color:white;
+  color:white;
 
-outline:none;
+  outline:none;
+
+  backdrop-filter:blur(10px);
 }
 
 textarea{
@@ -167,20 +171,23 @@ gap:20px;
 
 .card{
 
-background:
-rgba(255,255,255,.05);
+  background:
+    rgba(255,255,255,.05);
 
-border:
-1px solid rgba(255,255,255,.08);
+  border:
+    1px solid rgba(255,255,255,.08);
 
-border-radius:25px;
+  border-left:
+    4px solid #ffd166;
 
-padding:20px;
+  border-radius:25px;
 
-backdrop-filter:blur(10px);
+  padding:30px;
 
-animation:
-fadeUp .4s ease;
+  backdrop-filter:blur(10px);
+
+  animation:
+    fadeUp .4s ease;
 }
 
 .card h3{
@@ -229,4 +236,34 @@ font-size:2.2rem;
 .subtitle{
 font-size:1.2rem;
 }
+}
+
+
+.dedicatoria{
+
+  color:#ffd166;
+
+  font-style:italic;
+
+  margin-bottom:10px;
+
+  line-height:1.7;
+}
+
+.card h3{
+
+  color:#ffd166;
+
+  margin-bottom:15px;
+
+  font-size:1.3rem;
+}
+
+.card p{
+
+  line-height:1.9;
+
+  white-space:pre-wrap;
+
+  font-size:1.1rem;
 }
